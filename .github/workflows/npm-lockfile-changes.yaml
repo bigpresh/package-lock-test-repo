@@ -12,7 +12,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: NPM Lockfile Changes
-        uses: bigpresh/npm-lockfile-changes@bigpresh/support_multiple_lockfiles
+        uses: bigpresh/npm-lockfile-changes@support_multiple_lockfiles
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           # Optional inputs, can be deleted safely if you are happy with default values.
