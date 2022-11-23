@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "fs-jetpack": "^5.1.0"
+    "fs-jetpack": "^5.1.0",
+    "markdown-table": "^3.0.2"
   }
 }
