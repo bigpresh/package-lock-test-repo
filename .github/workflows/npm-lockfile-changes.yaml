@@ -1,0 +1,23 @@
+name: NPM Lockfile Changes
+on: [pull_request]
+
+jobs:
+  lockfile_changes:
+    runs-on: ubuntu-latest
+    # Permission overwrite is required for Dependabot PRs, see "Common issues" below.
+    permissions:
+      pull-requests: write
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: NPM Lockfile Changes
+        uses: bigpresh/npm-lockfile-changes@bigpresh/support_multiple_lockfiles
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          # Optional inputs, can be deleted safely if you are happy with default values.
+          collapsibleThreshold: 25
+          failOnDowngrade: false
+          path: auto
+          updateComment: true
+
