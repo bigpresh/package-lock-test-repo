@@ -1,6 +1,8 @@
 {
   "dependencies": {
     "fs-jetpack": "^5.1.0",
-    "markdown-table": "^3.0.2"
+    "js-base64": "^3.7.3",
+    "markdown-table": "^3.0.2",
+    "prettier": "^2.8.0"
   }
 }
